@@ -1,0 +1,27 @@
+{
+    "tasks": [
+        {
+            "type": "shell",
+            "label": "Build and Run Active C++ File",
+            "command": "cd \"${fileDirname}\" && /opt/homebrew/bin/g++-16 \"${fileBasename}\" -std=c++23 -g -o \"${fileBasenameNoExtension}\" && ./\"${fileBasenameNoExtension}\"",
+            "options": {
+                "cwd": "${fileDirname}"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "presentation": {
+                "echo": false,
+                "reveal": "always",
+                "focus": false,
+                "panel": "shared",
+                "showReuseMessage": false
+            }
+        }
+    ],
+    "version": "2.0.0"
+}

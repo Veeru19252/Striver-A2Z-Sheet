@@ -1,0 +1,7 @@
+[
+    {
+        "key": "cmd+shift+a",
+        "command": "workbench.action.tasks.build",
+        "when": "editorTextFocus"
+    }
+]

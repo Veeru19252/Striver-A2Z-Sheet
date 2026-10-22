@@ -1,0 +1,14 @@
+{
+  "C++ main file template": {
+    "prefix": "cppmain",
+    "body": [
+      "#include<bits/stdc++.h>",
+      "using namespace std;",
+      "int main(void){",
+      "",
+      "    return 0;",
+      "}"
+    ],
+    "description": "Insert standard C++ main template"
+  }
+}

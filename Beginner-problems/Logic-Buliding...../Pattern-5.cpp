@@ -1,6 +1,43 @@
+/*986. Pattern 5
+Given an integer n. You need to recreate the pattern given below for any value of N. Let's say for N = 5, the pattern should look like as below:
+
+*****
+
+****
+
+***
+
+**
+
+*
+
+Print the pattern in the function given to you.
+
+Example 1:
+Input: n = 4
+
+Output:
+
+
+
+Example 2:
+Input: n = 2
+
+Output:
+
+Constraints:
+1 <= n <= 100
+*/
 #include<iostream>
 using namespace std;
+void pattern_5(int n){
+    for(int i=n-1;i>=0;i--){
+        for(int j=0;j<=i;j++){
+            cout<<"*";
+        }cout<<endl;
+    }
+}
 int main(void){
-    cout<<"Hello,World!"<<endl;
+    pattern_5(6);
     return 0;
 }
